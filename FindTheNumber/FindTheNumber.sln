@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheNumber.Android", "FindTheNumber\FindTheNumber.Android\FindTheNumber.Android.csproj", "{6FE7E584-565D-497A-B294-12721519C215}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheNumber", "FindTheNumber\FindTheNumber\FindTheNumber.csproj", "{EF5EB992-2DA5-4722-8C9F-68874F395FDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FE7E584-565D-497A-B294-12721519C215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE7E584-565D-497A-B294-12721519C215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE7E584-565D-497A-B294-12721519C215}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6FE7E584-565D-497A-B294-12721519C215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE7E584-565D-497A-B294-12721519C215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE7E584-565D-497A-B294-12721519C215}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EF5EB992-2DA5-4722-8C9F-68874F395FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF5EB992-2DA5-4722-8C9F-68874F395FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF5EB992-2DA5-4722-8C9F-68874F395FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF5EB992-2DA5-4722-8C9F-68874F395FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84507621-FBEF-4E3C-A8FC-24566AD9EC2E}
+	EndGlobalSection
+EndGlobal

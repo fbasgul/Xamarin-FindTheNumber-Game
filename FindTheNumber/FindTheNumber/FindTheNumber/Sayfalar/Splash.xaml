@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindTheNumber.Sayfalar.Splash"
+             BackgroundImage="bg1.png">
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="menu" TargetType="Label">
+                <Setter Property="FontSize" Value="28"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="mvboli.ttf#MV Boli"/>
+                <Setter Property="TextColor" Value="Wheat"/>
+                <Setter Property="HeightRequest" Value="80"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+    <!--<ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Label Text="Yeni Oyun" Grid.Row="3" Grid.Column="0" Style="{StaticResource menu}" x:Name="new_game">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="{Binding newgameclick}"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="Nasıl Oynanır"  Grid.Row="4" Grid.Column="0" Style="{StaticResource menu}">
+                </Label>
+                <Label Text="Ayarlar"  Grid.Row="6" Grid.Column="0" Style="{StaticResource menu}">
+                </Label>
+                <Label Text="Skor Tablosu"  Grid.Row="5" Grid.Column="0" Style="{StaticResource menu}">
+                </Label>
+                <Label Text="Uygulama Fikret Başgül tarafından yapılmıştır ve telif hakkı saklıdır." Grid.Row="7" Grid.Column="0" 
+                       FontSize="7" VerticalOptions="End" HorizontalTextAlignment="Start" TextColor="Gray" ></Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>-->
+</ContentPage>

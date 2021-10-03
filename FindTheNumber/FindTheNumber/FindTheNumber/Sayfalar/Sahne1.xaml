@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindTheNumber.Sayfalar.Sahne1" BackgroundColor="#3B519A">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="sayilar" TargetType="Button">
+                <Setter Property="WidthRequest" Value="48"/>
+                <Setter Property="HeightRequest" Value="48"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="BorderRadius" Value="5"/>
+            </Style>
+            <Style x:Key="operator" TargetType="Button">
+                <Setter Property="WidthRequest" Value="48"/>
+                <Setter Property="HeightRequest" Value="48"/>
+                <Setter Property="TextColor" Value="Green"/>
+                <Setter Property="BackgroundColor" Value="Coral"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="BorderRadius" Value="5"/>
+                <Setter Property="Padding" Value="10,0,10,0"/>
+            </Style>
+            <Style x:Key="operatoresittir" TargetType="Button">
+                <Setter Property="WidthRequest" Value="48"/>
+                <Setter Property="HeightRequest" Value="48"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="Green"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="BorderRadius" Value="5"/>
+                <Setter Property="Padding" Value="10,0,10,0"/>
+            </Style>
+            <Style x:Key="labelfont" TargetType="Label">
+                <!--<Setter Property="FontFamily" Value="WWPencil.ttf#WW Pencil"/>-->
+                <Setter Property="FontFamily" Value="mvboli.ttf#MV Boli"></Setter>
+                <Setter Property="LineBreakMode" Value="NoWrap"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Label Text="0" x:Name="lblskor" Grid.Row="0" Grid.Column="0" FontSize="16" Grid.ColumnSpan="5" HorizontalTextAlignment="Start" VerticalOptions="Center"
+                       Style="{StaticResource labelfont}" TextColor="White"></Label>
+                
+                <Image  Source="Hearts32x3232.png" HorizontalOptions="EndAndExpand" Grid.Column="5" Grid.Row="0" x:Name="imgbes"></Image>
+                <Image  Source="Hearts32x3232.png" HorizontalOptions="EndAndExpand" Grid.Column="6" Grid.Row="0" x:Name="imgdort"></Image>
+                <Image  Source="Hearts32x3232.png" HorizontalOptions="EndAndExpand" Grid.Column="7" Grid.Row="0" x:Name="imguc"></Image>
+                <Image  Source="Hearts32x3232.png" HorizontalOptions="EndAndExpand" Grid.Column="8" Grid.Row="0" x:Name="imgiki"></Image>
+                <Image  Source="Hearts32x3232.png" HorizontalOptions="EndAndExpand" Grid.Column="9" Grid.Row="0" x:Name="imgbir"></Image>
+            </Grid>
+                    <Grid RowSpacing="3" ColumnSpacing="3">
+                <Label Text="SAYIYI BUL" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="Large" HorizontalTextAlignment="Center" 
+                       VerticalOptions="Start" HorizontalOptions="Fill" TextColor="#569A1E" FontAttributes="Bold" Style="{StaticResource labelfont}" ></Label>
+                <Label Text="Ulaşılacak Sayı" Grid.Row="1" Grid.Column="0" FontSize="22" Grid.ColumnSpan="2" HorizontalTextAlignment="Start" VerticalOptions="Center"
+                       Style="{StaticResource labelfont}" TextColor="White"></Label>
+                <Label Text="" x:Name="lblsayi" Grid.Row="1" Grid.Column="2" FontSize="22" HorizontalTextAlignment="End" VerticalOptions="Center"
+                       Style="{StaticResource labelfont}" TextColor="White"></Label>
+            </Grid>
+            
+            <Grid RowSpacing="2" ColumnSpacing="2" x:Name="butonlarinhepsi">
+
+                <Button Text="1" Grid.Column="0" Grid.Row="0" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="2" Grid.Column="1" Grid.Row="0" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="3" Grid.Column="2" Grid.Row="0" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="4" Grid.Column="3" Grid.Row="0" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="5" Grid.Column="4" Grid.Row="0" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="6" Grid.Column="5" Grid.Row="0" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="7" Grid.Column="6" Grid.Row="0" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="8" Grid.Column="7" Grid.Row="0" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+
+                <Button Text="9" Grid.Column="0" Grid.Row="1" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="10" Grid.Column="1" Grid.Row="1" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="12" Grid.Column="2" Grid.Row="1" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="15" Grid.Column="3" Grid.Row="1" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="18" Grid.Column="4" Grid.Row="1" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="21" Grid.Column="5" Grid.Row="1" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="24" Grid.Column="6" Grid.Row="1" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="27" Grid.Column="7" Grid.Row="1" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+
+                <Button Text="30" Grid.Column="0" Grid.Row="2" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="33" Grid.Column="1" Grid.Row="2" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="36" Grid.Column="2" Grid.Row="2" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="39" Grid.Column="3" Grid.Row="2" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="42" Grid.Column="4" Grid.Row="2" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="45" Grid.Column="5" Grid.Row="2" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="48" Grid.Column="6" Grid.Row="2" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="51" Grid.Column="7" Grid.Row="2" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+
+                <Button Text="54" Grid.Column="0" Grid.Row="3" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="57" Grid.Column="1" Grid.Row="3" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="60" Grid.Column="2" Grid.Row="3" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="63" Grid.Column="3" Grid.Row="3" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="66" Grid.Column="4" Grid.Row="3" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="69" Grid.Column="5" Grid.Row="3" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="72" Grid.Column="6" Grid.Row="3" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="75" Grid.Column="7" Grid.Row="3" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+
+                <Button Text="78" Grid.Column="0" Grid.Row="4" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="81" Grid.Column="1" Grid.Row="4" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="84" Grid.Column="2" Grid.Row="4" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="87" Grid.Column="3" Grid.Row="4" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="90" Grid.Column="4" Grid.Row="4" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="93" Grid.Column="5" Grid.Row="4" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="96" Grid.Column="6" Grid.Row="4" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+                <Button Text="99" Grid.Column="7" Grid.Row="4" Style="{StaticResource sayilar}" Clicked="Button_Clicked"></Button>
+
+            </Grid>
+            <Grid RowSpacing="1" ColumnSpacing="1" x:Name="islemlerinhepsi">
+
+                <Button Text="+" Grid.Column="0" Grid.Row="0" Style="{StaticResource operator}" Clicked="Button_Operator_Clicked"></Button>
+                <Button Text="-" Grid.Column="1" Grid.Row="0" Style="{StaticResource operator}" Clicked="Button_Operator_Clicked"></Button>
+                <Button Text="*" Grid.Column="2" Grid.Row="0" Style="{StaticResource operator}" Clicked="Button_Operator_Clicked"></Button>
+                <Button Text="/" Grid.Column="3" Grid.Row="0" Style="{StaticResource operator}" Clicked="Button_Operator_Clicked"></Button>
+                <Button Text="=" Grid.Column="4" Grid.Row="0" Style="{StaticResource operatoresittir}" Clicked="Button_Operator_Clicked"></Button>
+
+            </Grid>
+            <Grid RowSpacing="1" ColumnSpacing="1">
+                <Label Text="" x:Name="lblislem"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="8" FontSize="24" HorizontalTextAlignment="Start" 
+                       VerticalOptions="Start" HorizontalOptions="Fill" TextColor="White" FontAttributes="Bold" Style="{StaticResource labelfont}"></Label>
+                <Label Text="" x:Name="lblsonuc"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="8" FontSize="Large" HorizontalTextAlignment="Start" 
+                       VerticalOptions="Start" HorizontalOptions="Fill" TextColor="White" FontAttributes="Bold" Style="{StaticResource labelfont}"></Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
